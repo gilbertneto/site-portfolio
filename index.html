@@ -9,27 +9,31 @@
     <link rel="stylesheet" href="./estilo/estilo-principal.css">
     <link rel="stylesheet" href="./estilo/mediaqueries.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/ico">
-
+    <script src="https://kit.fontawesome.com/460b94f0c7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <i id="burguer" class="material-symbols-outlined" onclick="abreNav()">menu</i>
         <div id="navlateral" class="menulateral">
-            <a href="javascript:void(0)" class="closebtn" onclick="fechaNav()">&times;</a>
+            <a href="javascript:void(0)" class="btfechar" onclick="fechaNav()">&times;</a>
             <a href="index.html">Início</a>
             <a href="sobre.html">Sobre</a>
             <a href="projeto.html">Projetos</a>
             <a href="contato.html">Contato</a>
         </div>
         <!-- ---------------------------------------------------------------------------------- -->
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="projeto.html">Projetos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+        <nav class="menu">
+            <div class="split">
+                <a href="https://github.com/gilbertneto" target="_blank"><i class="fa-brands fa-github" style="color: rgb(255, 229, 202);"></i></a>
+                <a href="https://www.linkedin.com/in/netogilbertoo/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(255, 229, 202);"></i></a>
+            </div>
+            <div class="split2">
+                <a href="index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="projeto.html">Projetos</a>
+                <a href="contato.html">Contato</a>
+            </div>
         </nav>
     </header>
     <main>

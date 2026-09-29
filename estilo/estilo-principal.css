@@ -1,75 +1,104 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+html {
+  scroll-behavior: smooth
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: lightslategrey;
-    font-family: 'Space Grotesk';
-    font-size: 1.5em;
-    color: black;
+  background-color: rgb(38, 82, 140);
+  font-family: 'Space Grotesk';
+  font-size: 1.5em;
+  color: rgb(255, 229, 202);
 }
 
 header {
-    background-color: grey;
-    padding: 10px;
-    border: 1px dashed;
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  height: 60px;
+  background-color: grey;
+  /* padding: 10px; */
+  /* border: 1px dashed; */
+
 }
 
-nav#menu ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+nav.menu {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: 100%;
+  width: 100vw;
+  padding: 10px 16px;
+  /* border: 1px solid; */
 }
 
-nav#menu a {
-    text-decoration: none;
-    color: rgb(37, 36, 36);
-    font-weight: 500;
-    font-size: 0.9em;
-    padding: 10px 16px;
+nav.menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(255, 229, 202);
+  font-weight: 500;
+  font-size: 1.2em;
+  transition: transform 0.6s ease, letter-spacing 0.6s ease,
+    color 0.6s ease, text-shadow 0.6s ease;
+  /* border: 1px solid; */
 }
 
-nav#menu a:hover {
-    color: aliceblue;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.192);
-    transition: 0.6s;
+nav.menu a:hover {
+  color: rgb(38, 82, 140);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.192);
+  transform: translateY(-5px);
+  letter-spacing: 5px;
+}
+
+div.split {
+  grid-column: 1;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+div.split2 {
+  grid-column: 2;
+  justify-self: center;
+  display: flex;
+  gap: 60px;
 }
 
 i#burguer {
-    width: 28px;
-    /* border: 1px solid; */
-    cursor: pointer;
-    margin-top: 4px;
-    display: none;
+  width: 28px;
+  cursor: pointer;
+  margin-top: 4px;
+  display: none;
+  /* border: 1px solid; */
 }
 
 /* ------------------------------------------------------------------------ */
 
 .menulateral {
-  height: 100%; 
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0; 
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
-  padding-top: 60px; 
-  transition: 0.5s; 
+  background-color: rgba(119, 136, 153, 0.938);
+  /*rgb (118, 71, 45)*/
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 .menulateral a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: rgb(255, 229, 202);
   display: block;
   transition: 0.3s;
 }
@@ -80,7 +109,7 @@ i#burguer {
 }
 
 
-.menulateral .closebtn {
+.menulateral .btfechar {
   position: absolute;
   top: 0;
   right: 25px;
@@ -89,6 +118,11 @@ i#burguer {
 }
 
 @media screen and (max-height: 450px) {
-  .menulateral {padding-top: 15px;}
-  .menulateral a {font-size: 18px;}
+  .menulateral {
+    padding-top: 15px;
+  }
+
+  .menulateral a {
+    font-size: 18px;
+  }
 }

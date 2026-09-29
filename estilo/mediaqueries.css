@@ -1,20 +1,22 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 768px) {
-
+    
+    nav.menu {
+        display: none;
+    }
+    
     header {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     i#burguer {
         display: block;
         font-size: 1.4em;
-        margin: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    nav {
-        display: none;
-    }
-
-}   
+}
