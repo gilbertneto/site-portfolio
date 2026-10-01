@@ -50,8 +50,7 @@ nav.menu a {
 
 nav.menu a:hover {
   color: rgb(38, 82, 140);
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.192);
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   letter-spacing: 5px;
 }
 
@@ -67,7 +66,7 @@ div.split2 {
   grid-column: 2;
   justify-self: center;
   display: flex;
-  gap: 60px;
+  gap: 30px;
 }
 
 i#burguer {
