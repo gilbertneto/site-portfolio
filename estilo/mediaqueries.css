@@ -20,7 +20,7 @@
     }
 
     .introcodigo p {
-        letter-spacing: -4px;
-        font-size: 1.4em;
+        white-space: nowrap;
+        letter-spacing: -2px;
     }
 }
