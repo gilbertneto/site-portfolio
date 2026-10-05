@@ -11,6 +11,37 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <script src="https://kit.fontawesome.com/460b94f0c7.js" crossorigin="anonymous"></script>
 </head>
+<style>
+    * {
+        overflow: hidden;
+    }
+
+    p {
+        font-weight: 100;
+        font-size: 3em;
+    }
+
+    main {
+        font-family: Consolas;
+        height: 100vh;
+    }
+
+    .container {
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menormaior {
+        font-size: 0.6em;
+    }
+
+    .introcodigo p {
+        list-style: none;
+        font-size: clamp(1.4em, 5.5vw, 3.2em);
+    }
+</style>
 
 <body>
     <header>
@@ -27,8 +58,10 @@
         <!-- ---------------------------------------------------------------------------------- -->
         <nav class="menu">
             <div class="split">
-                <a href="https://github.com/gilbertneto" target="_blank"><i class="fa-brands fa-github" style="color: rgb(255, 229, 202);"></i></a>
-                <a href="https://www.linkedin.com/in/netogilbertoo/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: rgb(255, 229, 202);"></i></a>
+                <a href="https://github.com/gilbertneto" target="_blank"><i class="fa-brands fa-github"
+                        style="color: rgb(255, 229, 202);"></i></a>
+                <a href="https://www.linkedin.com/in/netogilbertoo/" target="_blank"><i class="fa-brands fa-linkedin-in"
+                        style="color: rgb(255, 229, 202);"></i></a>
             </div>
             <div class="split2">
                 <a href="index.html">Início</a>
@@ -39,7 +72,27 @@
         </nav>
     </header>
     <main>
-        <h1>Sejam bem-vindos, me chamo Gilberto!</h1>
+        <article class="container">
+            <ul class="introcodigo">
+                <li>
+                    <p>1 <i id="menormaior" class="fa-solid fa-less-than" style="color: rgb(255, 229, 202);"></i>Olá,
+                        sou Gilberto!<i id="menormaior" class="fa-solid fa-greater-than"
+                            style="color: rgb(255, 229, 202);"></i></p>
+                </li>
+                <li>
+                    <p>2 <i id="menormaior" class="fa-solid fa-less-than"
+                            style="color: rgb(255, 229, 202);">
+                            </i>Desenvolvedor </p>
+                </li>
+                <li>
+                    <p> 3&nbsp;&nbsp;de Software<i id="menormaior" class="fa-solid fa-greater-than"
+                            style="color: rgb(255, 229, 202);"></i></p>
+                </li>
+                <li>
+                    <p>4 _</p>
+                </li>
+            </ul>
+        </article>
     </main>
 
     <footer>

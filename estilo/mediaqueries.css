@@ -19,4 +19,8 @@
         margin-right: 0;
     }
 
+    .introcodigo p {
+        letter-spacing: -4px;
+        font-size: 1.4em;
+    }
 }
