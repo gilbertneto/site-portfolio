@@ -51,7 +51,7 @@ nav.menu a {
 nav.menu a:hover {
   color: rgb(38, 82, 140);
   transform: translateY(-2px);
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 div.split {
@@ -70,31 +70,30 @@ div.split2 {
 }
 
 i#burguer {
-  width: 28px;
+  width: 35px;
   cursor: pointer;
   margin-top: 4px;
   display: none;
-  /* border: 1px solid; */
 }
 
-/* ------------------------------------------------------------------------ */
+/* -------------------- Inicio menu burguer -------------------- */
 
-.menulateral {
-  height: 100%;
-  width: 0;
+.menuburguer {
+  height: 0;
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgba(119, 136, 153, 0.938);
+  background-color: rgba(128, 128, 128, 0.911);
   /*rgb (118, 71, 45)*/
   overflow-x: hidden;
-  padding-top: 60px;
+  /* padding-top: 60px; */
   transition: 0.5s;
 }
 
-.menulateral a {
-  padding: 8px 8px 8px 32px;
+.menuburguer a {
+  padding: 10px;
   text-decoration: none;
   font-size: 25px;
   color: rgb(255, 229, 202);
@@ -103,25 +102,35 @@ i#burguer {
 }
 
 
-.menulateral a:hover {
+.menuburguer a:hover {
   color: #f1f1f1;
 }
 
 
-.menulateral .btfechar {
+.menuburguer .btfechar {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 20px;
   font-size: 36px;
   margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
-  .menulateral {
+  .menuburguer {
     padding-top: 15px;
   }
 
-  .menulateral a {
+  .menuburguer a {
     font-size: 18px;
   }
 }
+
+.navburguer {
+  position: relative;
+  top: 10%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 20px;
+}
+
+/* --------------------- Fim menu burguer --------------------- */
