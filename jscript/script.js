@@ -26,8 +26,8 @@ function iniciarDigitacao() {
     const linhas = document.querySelectorAll('.introcodigo .texto');
     const cursorFinal = document.querySelector('.cursor-final');
 
-    const VELOCIDADE_DIGITACAO = 80; 
-    const PAUSA_ENTRE_LINHAS = 600;  
+    const VELOCIDADE_DIGITACAO = 40; 
+    const PAUSA_ENTRE_LINHAS = 80;  
 
     let indiceLinha = 0;
 

@@ -24,3 +24,28 @@
         letter-spacing: -2px;
     }
 }
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    
+    nav.menu {
+        display: none;
+    }
+    
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    i#burguer {
+        display: block;
+        font-size: 1.4em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .introcodigo p {
+        white-space: nowrap;
+        letter-spacing: -2px;
+    }
+}

@@ -1,0 +1,59 @@
+    * {
+     overflow: hidden;
+}
+
+ p {
+     font-weight: 100;
+     font-size: 3em;
+ }
+
+ main {
+     font-family: Consolas;
+     height: 100vh;
+ }
+
+ .container {
+     height: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* ---------- Animação (digitacao) ---------- */
+ .dig-linha {
+     font-size: 0.7em;
+     color: rgba(128, 128, 128, 0.856);
+ }
+
+ .introcodigo p {
+     word-spacing: -12px;
+     list-style: none;
+     white-space: nowrap;
+     font-size: clamp(1.8em, 5.5vw, 3.2em);
+ }
+
+ .introcodigo .texto::after {
+     content: "";
+ }
+
+ .cursor-final {
+     opacity: 0;
+ }
+
+ .cursor-final.piscando {
+     opacity: 1;
+     animation: piscarCursor 0.8s step-end infinite;
+ }
+
+ @keyframes piscarCursor {
+
+     0%,
+     49% {
+         opacity: 1;
+     }
+
+     50%,
+     100% {
+         opacity: 0;
+     }
+ }

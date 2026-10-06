@@ -3,66 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Portfólio Gilberto Neto</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./estilo/estilo-principal.css">
     <link rel="stylesheet" href="./estilo/mediaqueries.css">
+    <link rel="stylesheet" href="./estilo/inicio.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/ico">
     <script src="https://kit.fontawesome.com/460b94f0c7.js" crossorigin="anonymous"></script>
 </head>
-<style>
-    * {
-        overflow: hidden;
-    }
-
-    p {
-        font-weight: 100;
-        font-size: 3em;
-    }
-
-    main {
-        font-family: Consolas;
-        height: 100vh;
-    }
-
-    .container {
-        height: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menormaior {
-        font-size: 0.6em;
-    }
-
-    /* ---------- Animação (digitacao) ---------- */
-    .introcodigo p {
-        list-style: none;
-        white-space: nowrap;
-        font-size: clamp(1.7em, 5.5vw, 3.2em);
-    }
-
-    .introcodigo .texto::after {
-        content: "";
-    }
-
-    .cursor-final {
-        opacity: 0;
-    }
-
-    .cursor-final.piscando {
-        opacity: 1;
-        animation: piscarCursor 0.8s step-end infinite;
-    }
-
-    @keyframes piscarCursor {
-        0%, 49% { opacity: 1; }
-        50%, 100% { opacity: 0; }
-    }
-</style>
-
 <body>
     <header>
         <i id="burguer" class="material-symbols-outlined" onclick="abreNav()">menu</i>
@@ -95,23 +44,19 @@
         <article class="container">
             <ul class="introcodigo">
                 <li>
-                    <p><span>1 </span><i id="menormaior" class="fa-solid fa-less-than"
-                            style="color: rgb(255, 229, 202);"></i><span class="texto"
-                            data-texto="Olá, sou Gilberto!"></span><i id="menormaior" 
-                            class="fa-solid fa-greater-than" style="color: rgb(255, 229, 202);"></i></p>
+                    <p><span class="dig-linha">1 </span><span class="texto"
+                            data-texto="&lt; Olá, eu sou Gilberto &gt;"></span></p>
                 </li>
                 <li>
-                    <p><span>2 </span><i id="menormaior"  class="fa-solid fa-less-than"
-                            style="color: rgb(255, 229, 202);"></i><span class="texto"
-                            data-texto="Desenvolvedor"></span></p>
+                    <p><span class="dig-linha">2 </span><span class="texto"
+                            data-texto="&lt; Eu projeto e também "></span></p>
                 </li>
                 <li>
-                    <p><span>3 </span>&nbsp;&nbsp;&nbsp;<span class="texto"
-                            data-texto="de Software."></span><i id="menormaior" class="fa-solid fa-greater-than"
-                            style="color: rgb(255, 229, 202);"></i></p>
+                    <p><span class="dig-linha">3 </span>&nbsp;&nbsp;&nbsp;<span class="texto"
+                            data-texto="desenvolvo Software &gt;"></span></p>
                 </li>
                 <li>
-                    <p><span class="menormaior">4</span> <span class="cursor-final">_</span></p>
+                    <p><span class="dig-linha">4</span> <span class="cursor-final">_</span></p>
                 </li>
             </ul>
         </article>

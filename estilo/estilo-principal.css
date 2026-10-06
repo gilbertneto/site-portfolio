@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
-html {
-  scroll-behavior: smooth
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -77,7 +73,6 @@ i#burguer {
 }
 
 /* -------------------- Inicio menu burguer -------------------- */
-
 .menuburguer {
   height: 0;
   width: 100%;
@@ -87,7 +82,7 @@ i#burguer {
   left: 0;
   background-color: rgba(128, 128, 128, 0.911);
   /*rgb (118, 71, 45)*/
-  overflow-x: hidden;
+  overflow-y: hidden;
   /* padding-top: 60px; */
   transition: 0.5s;
 }
@@ -98,14 +93,12 @@ i#burguer {
   font-size: 25px;
   color: rgb(255, 229, 202);
   display: block;
-  transition: 0.3s;
+  transition: 0.5s;
 }
-
 
 .menuburguer a:hover {
-  color: #f1f1f1;
+  color: black;
 }
-
 
 .menuburguer .btfechar {
   position: absolute;
@@ -127,9 +120,9 @@ i#burguer {
 
 .navburguer {
   position: relative;
-  top: 10%; 
-  width: 100%; 
-  text-align: center; 
+  top: 10%;
+  width: 100%;
+  text-align: center;
   margin-top: 20px;
 }
 
